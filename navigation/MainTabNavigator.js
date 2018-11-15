@@ -7,10 +7,12 @@ import HomeScreen from '../screens/HomeScreen';
 import OffersScreen from '../screens/OffersScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import MapScreen from '../screens/MapScreen';
+import BarDetailsScreen from "../screens/BarDetailsScreen";
 
 
 const HomeStack = createStackNavigator({
-  Home: HomeScreen,
+  Home: {screen: HomeScreen},
+  BarDetails: {screen: BarDetailsScreen},
 });
 
 HomeStack.navigationOptions = {
